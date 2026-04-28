@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Internship</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <h2>Chaithanya</h2>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#calculator">Calculator</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button onclick="toggleDarkMode()" id="darkBtn">🌙</button>
+</nav>
+
+<!-- HOME -->
+<section id="home" class="home">
+    <h1>Web Development Internship</h1>
+    <p id="greeting"></p>
+</section>
+
+<!-- CALCULATOR -->
+<section id="calculator" class="calculator">
+    <h2>Advanced Calculator</h2>
+    <input type="number" id="num1" placeholder="First number">
+    <input type="number" id="num2" placeholder="Second number">
+
+    <div class="buttons">
+        <button onclick="calculate('+')">+</button>
+        <button onclick="calculate('-')">-</button>
+        <button onclick="calculate('*')">x</button>
+        <button onclick="calculate('/')">/</button>
+    </div>
+
+    <h3 id="result">Result: </h3>
+</section>
+
+<!-- CARD -->
+<section class="card">
+    <h3>My Internship Project</h3>
+    <p>Built using HTML, CSS, JavaScript with responsive design.</p>
+    <button onclick="showMessage()">Learn More</button>
+</section>
+
+</section>
+
+<!-- ZOOM IMAGE -->
+<div id="zoomBox" onclick="closeZoom()">
+    <img id="zoomImg">
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>About Me</h2>
+    <p>I am a web development intern skilled inn HTML,CSS, and Javascript.
+        This project demonstrate responsive design and interactive features </p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email: naikotichaithanya@gmail.com</p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

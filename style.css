@@ -1,0 +1,102 @@
+body {
+    transition: 0. 3s;
+}
+    margin: 0;
+    font-family: Arial;
+    scroll-behavior: smooth;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #007bff, #00c6ff);
+    padding: 10px;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* DARK MODE */
+.dark  section{
+    background: #121212;
+    color: white;
+}
+.dark input {
+    background: #333;
+    color: white;
+    border; 1px solid #555;
+}
+
+#darkBtn {
+    background: #444;
+    color: white;
+}
+/*FIX DARK MODE FOR CARD */
+.dark .card {
+    background: #1e1e1e;
+    color: white;
+}
+
+/* HOME */
+.home {
+    text-align: center;
+    padding: 60px;
+}
+
+/* CALCULATOR */
+.calculator {
+    text-align: center;
+}
+
+input {
+    padding: 10px;
+    margin: 10px;
+}
+
+.buttons button {
+    padding: 10px;
+    margin: 5px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background: orange;
+}
+
+/* CARD */
+.card {
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    background: #f4f4f4;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .images {
+        flex-direction: column;
+        align-items: center;
+    }
+}
